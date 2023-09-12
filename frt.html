@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Моя веб-сторінка</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column; /* Стовпчиковий напрямок для цілого документа */
+            background-image: url('image.jpg'); /* Шлях до вашого фонового зображення */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center; /* Розміщуємо фон по центру */
+            background-attachment: fixed;
+        }
+        header{
+  opacity: 0.5;
+  }
+        /* Стилі для тексту */
+        header, nav, aside, footer, main, section, h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, img {
+            color: #FFF; /* Колір тексту */
+        }
+
+        /* Розташовуємо aside і nav зліва */
+        aside, nav {
+            float: left;
+            clear: left;
+            width: 20%; /* Задаємо ширину, ви можете змінити її на потрібне значення */
+            opacity: 1; /* Прозорість */
+        }
+
+        /* Решта вашого CSS залишається незмінним */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+      opacity: 2;
+            padding: 10px;
+        }
+
+        aside {
+            
+            padding: 10px;
+        }
+
+        footer {
+      opacity: 0.4;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* CSS для стилізації тексту */
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        h1 {
+            color: #FFA500; /* Померанчевий колір (Orange) */
+        }
+
+        ul {
+            list-style: disc;
+            margin-left: 20px;
+        }
+
+        ol {
+            list-style: decimal;
+            margin-left: 20px;
+        }
+  aside, main , nav{
+    color: #000; /* Чорний колір тексту */
+        }
+        /* CSS для посилань */
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* CSS для центрування main і aside */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 20px; /* Додатковий відступ від країв сторінки */
+        }
+		h4,h5,h6{
+		font-size: 20px;
+		}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ласкаво просимо на мою сторінку!</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Головна</a></li>
+            <li><a href="#">Про нас</a></li>
+            <li><a href="#">Послуги</a></li>
+            <li><a href="#">Контакти</a></li>
+        </ul>
+    </nav>    <div class="container">
+    
+        <main>
+            <h2>Біографія героїв Metro</h2>
+            <p>Мене звати Денис одним з моїх хоббі є комп'юторні ігри. Однією з моїх улюблених ігор є всі частини Metro</p> 
+			<p>На цьому сайті буде розлядатись біографія моїх улюблених героїв Metro:</p>
+            <h3>1. Артем</h3>
+            <p>Народився у грі п у 2013 році, а в серії книг в 2009.</p> 
+   <p>Спочатку жив на Тимірязєвській, доки її не захопили зграї змутованих щурів.</P> 
+   <P>Матір в останню мить передала Артема солдату, що наздоганяв мотодрезину.</p> 
+   <p>На ній чоловік і врятував хлопчика. Пізніше Артем назвав його вітчимом.</p>
+            <p>Працюєвав на підземній "чайній" фабриці, як свідчить роман, проте в іграх це не підтверджується..</p>
+            <h4>2. Мельник</h4>
+			<p>Святослав Костянтинович Мельников (Мельник) — один з головних героїв книг Метро 2033, Метро 2034,</p> 
+			<p>Метро 2035, а також ключовий персонаж комп'ютерних ігор Metro 2033,</p> 
+			<p>Metro: Last Light та Metro: Exodus. Досвідчений сталкер, командир загону сталкерів Полісу, а згодом, лідер Ордену.</p>
+            <p>Мельник — шістдесятирічний полковник Ордена. Незважаючи на вік, він знаходиться в прекрасній фізичній формі</p> 
+			<p>завдяки тренуванням з ранньої служби ще в Радянській Армії. Дізнавшись про загрозу, що насувається від чорних,</p> 
+			<p>Мельников не відмовляє в допомозі Артему і не зупиняється ні перед чим, щоб знищити їх.</p>
+			<h6>3. Хан<h/6>
+			<p>Хан — сам вважає себе останнім втіленням Чінгіз Хана, відкіля і ім'я.</p>
+            <p>Старший сивий чоловік із коротенькою борідкою. Вперше зустрічається нам одразу після таємничої загибелі Бурбона.</p> 
+            <p>Виводить навівпритомного Артема із «зони сметрельного шуму» (від дії якого загинув Бурбон) на станцію Сухарєвська.</p> 
+            <p>Сповідує своєрідну філософію , що допомагає йому вижити на Сухарєвській.</p>
+			<p>У світі Metro існували такі основні фракції: </p>
+			<ul>
+                <li>Ганза</li>
+                <li>Поліс</li>
+				<li>фашисти</li>
+				<li>Червоні</li>
+				<li>Сектанти</li>
+				<li>Анархісти</li>
+            </ul>
+			<p>Також були франції які мало згадувались у грі</p>
+            <ol>
+                <li>Смарагдове Місто</li>
+                <li>Адепти Великого Хробака</li>
+				<li>Бауманський альянс</li>
+            </ol>
+        </main>
+        
+        <aside>
+            <h3>АРТЕМ СУХИЙ</h3>
+   <section>
+            <img src="Артем.jpg" 
+            </section>
+            <p> '</p>
+			<h5>МЕЛЬНИК </h5>
+			<img src="Мельник.jpg">
+			<h6>ХАН </h6>
+			<img src="Хан.jpg">
+        </aside>
+
+    </div>
+    <section>
+        <h2>Посилання на улюблені веб-сайти</h2>
+        <ul>
+            <li><a href="https://metropedia.fandom.com/wiki/Головна_сторінка" target="_blank"><img src="example.jpg" alt="metropedia.com"></a></li>
+            <li><a href="https://www.google.com" target="_blank"><img src="google.jpg" alt="Google.com"></a></li>
+            <li><a href="https://web.telegram.org/a/" target="_blank"><img src="telegram.jpg" alt="telegram.com"></a></li>
+        </ul>
+    </section>
+ <footer>
+        <p>&copy; 2023 Моя веб-сторінка. Усі права захищені.</p>
+    </footer>
+</body>
+</html>
