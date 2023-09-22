@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #34495e;
+    background-image: url('image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.registration-box {
+    width: 300px;
+    padding: 40px;
+    border: 1px solid #ccc;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+.registration-box h2 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.registration-box input[type="text"],
+.registration-box input[type="password"],
+.registration-box input[type="email"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid yellow;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 0;
+    transition: 0.25s;
+}
+
+.registration-box input[type="text"]:focus,
+.registration-box input[type="password"]:focus,
+.registration-box input[type="email"]:focus {
+    width: 250px;
+    border-color: green;
+}
+
+.registration-box input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #be724f;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 0;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.registration-box input[type="submit"]:hover {
+    background: #e05930;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+	width: 160px;
+	height: auto;
+}
+
+
+
+
+
