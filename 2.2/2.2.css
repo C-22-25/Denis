@@ -1,0 +1,29 @@
+/* Завдання 1: Форматування шрифту */
+.font-formatting-1{
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Завдання 2: Форматування тексту */
+.font-formatting-2 p {
+  color: #0000FF;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* Завдання 3: Внутрішні та зовнішні відступи */
+.text-block-3 {
+  padding: 20px;
+  margin: 10px;
+}
+
+
+
+/* Завдання 4: Рамки */
+.text-block-4 {
+border: 2px dotted #EE0000; /* Пунктирна рамка червоного кольору */
+  border-radius: 10px; /* Заокруглені кути рамки */
+}
+
+
