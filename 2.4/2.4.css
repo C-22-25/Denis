@@ -1,0 +1,180 @@
+/* Стилі для заголовків */
+
+h1 {
+  color: #333;
+}
+
+h2 {
+  color: #555;
+}
+
+/* Стилі для навігаційного меню */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #0077FF;
+}
+.form {
+	width: 50%; /* Задаємо ширину секції */
+  margin: 1 auto;
+  text-align: left; /* Вирівнювання тексту зліва */
+}
+
+/* Стилі для контейнера форми та фото */
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-image {
+  flex: 1;
+  margin-left: 1150px; /* Розташовуємо фото максимально вправо */
+}
+
+.form-image img {
+  max-width: 50;
+  height: auto;
+}
+
+/* Оновлені стилі для форми залишаються без змін */
+form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #777;
+}
+
+form input[type="text"],
+form input[type="email"] {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+
+form button[type="submit"] {
+  background-color: #0077FF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Стилі для всього документа */
+body {
+  font-family: "Brush Script MT", cursive;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1; /* Колір фону для всього документа */
+  background-image: url('C:\\Users\\Denis\\Pictures\\fon.jpg'); /* URL зображення фону */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  color: #333;
+}
+
+/* Додавання псевдоелемента для блока .form, який виступатиме як фон для форми */
+.form::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.1); /* Полупрозорий фон форми */
+  z-index: -1; /* Задній фон розміщується позаду форми */
+}
+
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Центруємо текст по горизонталі та вертикалі */
+  background-color: rgba(255, 255, 255, 0.5); /* Полупрозорий фон тексту */
+  padding: 20px;
+  z-index: 1; /* Текст розміщується поверх інших елементів */
+}
+
+/* Стилі для .table, які виключають фон таблиці */
+.table {
+  background-color: transparent;
+}
+
+/* Стилі для таблиці */
+.table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Змінюємо колір тексту при наведенні на рядок (tr) */
+.table tbody tr:hover {
+  background-color: #0077FF; /* Синій колір фону */
+  color: white; /* Білий колір тексту */
+  cursor: pointer; /* Змінюємо курсор при наведенні */
+}
+
+/* Стиль заголовка таблиці */
+table th {
+  background-color: #0077FF;
+  color: white;
+}
+
+/* Оновлений стиль для header */
+.header {
+  background-color: #0077FF; /* Синій колір */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+
+body {
+  font-family: "Brush Script MT", cursive;
+}
+.header h1 {
+  margin: 0;
+  font-size: 36px; /* Збільшуємо розмір шрифту */
+  font-weight: bold; /* Робимо шрифт більш товстим */
+  font-family: "Brush Script MT", cursive; /* Встановлюємо шрифт */
+  text-transform: uppercase; /* Перетворюємо текст у великі літери */
+}
+
+/* Решта стилів залишаються без змін */
+.header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.header nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.header nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
