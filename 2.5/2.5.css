@@ -1,0 +1,47 @@
+/* Стилі для контейнера */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Загальні стилі для блоків */
+.box {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+}
+
+/* Специфічні стилі для різних видів позиціонування */
+.box.static {
+    background-color: #ccc;
+    position: static;
+    z-index: 1; /* Цей блок знаходиться за замовчуванням у звичайному порядку */
+}
+
+.box.relative {
+    background-color: yellow;
+    position: relative;
+    top: 20px; /* Підняти блок на 20px відносно його звичайної позиції */
+    right:-40px
+    z-index: 2; /* Цей блок знаходиться вище інших через властивість z-index */
+}
+
+.box.absolute {
+    background-color: purple;
+    position: absolute;
+    top: 50px; /* Позиція відносно контейнера .container */
+    left: 350px;
+    z-index: 3; /* Цей блок знаходиться між .static та .relative через z-index */
+}
+
+.box.fixed {
+    background-color: gray;
+    position: fixed;
+    bottom: 10px; /* Фіксована позиція відносно вікна перегляду */
+    right: 10px;
+    z-index: 4; /* Цей блок знаходиться найвище через властивість z-index */
+}
