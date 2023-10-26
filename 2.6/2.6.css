@@ -1,0 +1,41 @@
+/* Стилі для горизонтальної панелі навігації */
+.horizontal-nav {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+.horizontal-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.horizontal-nav a:hover {
+    background-color: #555;
+}
+
+/* Стилі для вертикальної панелі навігації */
+.vertical-nav {
+    background-color: #333;
+    width: 200px;
+}
+
+.vertical-nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+}
+
+.vertical-nav a:hover {
+    background-color: #555;
+}
+
+/* Стилі для елементів дизайну (іконок чи розділювачів) */
+.design-element {
+    width: 20px;
+    height: 20px;
+    background-color: #ff6600;
+    margin: 5px;
+}
