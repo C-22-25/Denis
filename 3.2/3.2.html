@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM і JavaScript</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: lightgreen;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+
+        h1 {
+            text-align: center;
+            transition: color 0.3s;
+            cursor: pointer;
+        }
+
+        .list li, #link, p {
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="mainDiv">
+        <h1>Ласкаво просимо на мою сторінку!</h1>
+        <p>параглаф з важливою інформацією.</p>
+        <ul class="list">
+            <li>пункт 1</li>
+            <li>пункт 2</li>
+            <li>пункт 3</li>
+        </ul>
+        <a href="#" id="link">натисни сюди!</a>
+    </div>
+
+    <script>
+        const h1 = document.querySelector('h1');
+        const listItems = document.querySelectorAll('.list li');
+        const link = document.getElementById('link');
+        const paragraph = document.querySelector('p');
+
+        // Додавання обробників подій для збільшення розміру та зміни кольору при наведенні
+        h1.addEventListener('mouseover', function() {
+            const randomColor = getRandomColor();
+            h1.style.color = randomColor;
+        });
+
+        listItems.forEach(item => {
+            item.addEventListener('mouseover', function() {
+                item.style.fontSize = '24px';
+                const randomColor = getRandomColor();
+                item.style.color = randomColor;
+            });
+
+            item.addEventListener('mouseout', function() {
+                item.style.fontSize = '16px';
+                item.style.color = 'initial';
+            });
+        });
+
+        link.addEventListener('mouseover', function() {
+            link.style.fontSize = '24px';
+            const randomColor = getRandomColor();
+            link.style.color = randomColor;
+        });
+
+        link.addEventListener('mouseout', function() {
+            link.style.fontSize = '16px';
+            link.style.color = 'initial';
+        });
+
+        paragraph.addEventListener('mouseover', function() {
+            paragraph.style.fontSize = '24px';
+            const randomColor = getRandomColor();
+            paragraph.style.color = randomColor;
+        });
+
+        paragraph.addEventListener('mouseout', function() {
+            paragraph.style.fontSize = '16px';
+            paragraph.style.color = 'initial';
+        });
+
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+    </script>
+</body>
+</html>
+
