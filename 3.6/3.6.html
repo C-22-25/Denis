@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        div {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Завдання 1: Робота з подіями миші -->
+<div>
+    <h2>Завдання 1: Робота з подіями миші</h2>
+    <button id="myButton">Натисни мене</button>
+    <div id="mouseMessage"></div>
+</div>
+
+<!-- Завдання 2: Обробка подій клавіатури -->
+<div>
+    <h2>Завдання 2: Обробка подій клавіатури</h2>
+    <input type="text" id="myInput" placeholder="Введіть текст">
+    <div id="keyboardMessage"></div>
+</div>
+
+<!-- Завдання 3: Робота з фокусом -->
+<div>
+    <h2>Завдання 3: Робота з фокусом</h2>
+    <input type="text" id="focusInput" placeholder="Текстове поле для фокусу">
+    <button id="focusButton">Фокус</button>
+    <div id="focusMessage"></div>
+</div>
+
+<!-- Завдання 4: Робота з об'єктом document -->
+<div>
+    <h2>Завдання 4: Робота з об'єктом document</h2>
+    <p id="documentMessage">Це текст на сторінці.</p>
+</div>
+
+<!-- Завдання 5: Використання addEventListener -->
+<div>
+    <h2>Завдання 5: Використання addEventListener</h2>
+    <div id="eventElement" style="border: 1px solid #000; padding: 10px; cursor: pointer;">Наведи курсор</div>
+    <div id="eventMessage"></div>
+</div>
+
+<script>
+    // Завдання 1
+    document.getElementById('myButton').addEventListener('click', function() {
+        document.getElementById('mouseMessage').innerText = 'Кнопка була натиснута!';
+    });
+
+    // Завдання 2
+    document.getElementById('myInput').addEventListener('keydown', function() {
+        document.getElementById('keyboardMessage').innerText = 'Клавіша була натиснута!';
+    });
+
+    // Завдання 3
+    const focusInput = document.getElementById('focusInput');
+    focusInput.addEventListener('focus', function() {
+        document.getElementById('focusMessage').innerText = 'Елемент отримав фокус!';
+    });
+
+    focusInput.addEventListener('blur', function() {
+        document.getElementById('focusMessage').innerText = 'Елемент втратив фокус!';
+    });
+
+    // Завдання 4
+    window.addEventListener('load', function() {
+        document.getElementById('documentMessage').innerText = 'Документ повністю завантажено!';
+    });
+
+    // Завдання 5
+    const eventElement = document.getElementById('eventElement');
+    const eventMessage = document.getElementById('eventMessage');
+
+    eventElement.addEventListener('mouseover', function() {
+        eventMessage.innerText = 'Подія виникла!';
+    });
+
+    eventElement.addEventListener('mouseover', function() {
+        eventMessage.innerText = 'Ще один обробник події!';
+    });
+</script>
+
+</body>
+</html>
