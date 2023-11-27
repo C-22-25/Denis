@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Practice</title>
+    <!-- Підключення бібліотеки jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <h1>Практика з jQuery</h1>
+    <div id="task1">
+        <p>Це абзац 1</p>
+        <p>Це абзац 2</p>
+        <p>Це абзац 3</p>
+    </div>
+    <div id="task2">
+        <ul>
+            <li>Елемент 1</li>
+            <li>Елемент 2</li>
+            <li>Елемент 3</li>
+        </ul>
+    </div>
+
+    <!-- Ваш скрипт jQuery -->
+    <script>
+        // Завдання 1: Селектори
+
+        // 1.1 Вибір всіх елементів <p> та зміна тексту на "Змінений текст"
+        $('p').text('Змінений текст');
+
+        // 1.2 Вибір елементу з ідентифікатором task1 та додавання класу highlight
+        $('#task1').addClass('highlight');
+
+        // 1.3 Вибір всіх елементів <li> та додавання класу list-item
+        $('li').addClass('list-item');
+
+        // Завдання 2: Зміни стилів
+
+        // 2.1 Зміна коліру тексту для всіх елементів з класом highlight
+        $('.highlight').css('color', 'red');
+
+        // 2.2 Зміна фону для всіх елементів 3 класом list-item на світло-сірий
+        $('.list-item').css('background-color', 'lightgray');
+
+        // Завдання 3: Анімація
+
+        // 3.1 Анімаційний ефект для елементів з класом highlight (наприклад, fadeIn або slideDown)
+        $('.highlight').fadeIn(2000); // 2000 мілісекунд (2 секунди)
+
+        // Завдання 4: Зміна вмісту
+
+        // 4.1 Зміна тексту останнього елемента <p> у блоку з ідентифікатором task1
+        $('#task1 p:last-child').text('Новий останній текст');
+
+        // Завдання 5: Додаткове завдання
+
+        // 5.1 Створення кнопки на сторінці
+        $('<button>', {
+            text: 'Видалити елементи з класом list-item',
+            click: function() {
+                // 5.2 Видалення всіх елементів з класом list-item
+                $('.list-item').remove();
+            }
+        }).appendTo('body');
+    </script>
+</body>
+</html>
+
+
